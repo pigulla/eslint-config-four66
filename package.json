@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-four66",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My personal ESLint config",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "eslintconfig"
   ],
   "author": "Raphael Pigulla <pigulla@four66.com>",
-  "license": "Unlicense",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/pigulla/eslint-config-four66/issues"
   },
