@@ -170,6 +170,7 @@ module.exports = {
         'no-process-env': "error",
         "no-process-exit": "error",
         "no-restricted-modules": "off",
+        "no-restricted-properties": "off",
         "no-sync": "off",
 
         "array-bracket-spacing": ["error", "never"],
@@ -207,8 +208,10 @@ module.exports = {
             "before": true,
             "after": true
         }],
+        "line-comment-position": "off",
         "linebreak-style": ["error", "unix"],
         "lines-around-comment": "off",
+        "lines-around-directive": ["error", "always"],
         "max-depth": ["error", 5],
         "max-len": ["error", 120],
         "max-lines": ["error", {
@@ -321,10 +324,11 @@ module.exports = {
         "no-useless-computed-key": "error",
         "no-useless-constructor": "error",
         "no-useless-rename": "error",
-        "no-var": "off",
+        "no-var": "error",
         "object-shorthand": "error",
         "prefer-arrow-callback": "off",
         "prefer-const": "error",
+        "prefer-numeric-literals": "error",
         "prefer-reflect": "off",
         "prefer-rest-params": "off",
         "prefer-spread": "error",
