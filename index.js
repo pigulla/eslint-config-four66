@@ -2,7 +2,6 @@ module.exports = {
     "parserOptions": {
         "ecmaVersion": 2015
     },
-
     "env": {
         "browser": false,
         "node": false,
@@ -137,7 +136,7 @@ module.exports = {
         "no-with": "error",
         "radix": "error",
         "vars-on-top": "off",
-        "wrap-iife": ["error", "inside"],
+        "wrap-iife": ["error", "inside", { "functionPrototypeMethods": true }],
         "yoda": ["error", "never"],
 
         "strict": ["error", "global"],
@@ -191,6 +190,7 @@ module.exports = {
         "eol-last": "error",
         "func-call-spacing": [2, "never"],
         "func-names": "off",
+        "func-name-matching": "off",
         "func-style": ["error", "declaration"],
         "id-blacklist": ["error"],
         "id-length": "off",
@@ -285,7 +285,8 @@ module.exports = {
         "space-before-blocks": "off",
         "space-before-function-paren": ["error", {
             "anonymous": "always",
-            "named": "never"
+            "named": "never",
+            "asyncArrow": "never"
         }],
         "space-in-parens": ["error", "never"],
         "space-infix-ops": "error",
