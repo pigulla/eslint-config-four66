@@ -216,7 +216,8 @@ module.exports = {
         "max-depth": ["error", 5],
         "max-len": ["error", {
             "code": 120,
-            "ignorePattern": true,
+            "tabWidth": 4,
+            "comments": 120,
             "ignoreComments": false,
             "ignoreTrailingComments": true,
             "ignoreUrls": false,
