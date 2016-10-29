@@ -131,6 +131,7 @@ module.exports = {
         "no-useless-call": "error",
         "no-useless-concat": "error",
         "no-useless-escape": "error",
+        "no-useless-return": "error",
         "no-void": "error",
         "no-warning-comments": "off",
         "no-with": "error",
@@ -213,7 +214,16 @@ module.exports = {
         "lines-around-comment": "off",
         "lines-around-directive": ["error", "always"],
         "max-depth": ["error", 5],
-        "max-len": ["error", 120],
+        "max-len": ["error", {
+            "code": 120,
+            "ignorePattern": true,
+            "ignoreComments": false,
+            "ignoreTrailingComments": true,
+            "ignoreUrls": false,
+            "ignoreStrings": false,
+            "ignoreTemplateLiterals": false,
+            "ignoreRegExpLiterals": false
+        }],
         "max-lines": ["error", {
             "max": 500,
             "skipBlankLines": true,
