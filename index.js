@@ -267,11 +267,11 @@ module.exports = {
         "no-underscore-dangle": "off",
         "no-unneeded-ternary": "error",
         "no-whitespace-before-property": "error",
-        "object-curly-newline": ["error", {
-            "multiline": true
-        }],
+        "object-curly-newline": ["off"],
         "object-curly-spacing": ["error", "always"],
-        "object-property-newline": "error",
+        "object-property-newline": ["error", {
+            "allowMultiplePropertiesPerLine": true
+        }],
         "one-var": "off",
         "one-var-declaration-per-line": ["error", "always"],
         "operator-assignment": ["error", "always"],
@@ -279,13 +279,7 @@ module.exports = {
         "padded-blocks": ["error", "never"],
         "quote-props": "off",
         "quotes": ["error", "single"],
-        "require-jsdoc": ["error", {
-            "require": {
-                "FunctionDeclaration": true,
-                "MethodDefinition": true,
-                "ClassDeclaration": true
-            }
-        }],
+        "require-jsdoc": ["off"],
         "semi": "error",
         "semi-spacing": ["error", {
             "before": false,
