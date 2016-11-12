@@ -1,13 +1,13 @@
 {
   "name": "eslint-config-four66",
-  "version": "3.9.2",
+  "version": "3.10.0",
   "peerDependencies": {
-    "eslint": "3.9.x"
+    "eslint": ">=3.10"
   },
   "description": "My personal ESLint config",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "eslint --config index.js index.js"
   },
   "repository": {
     "type": "git",

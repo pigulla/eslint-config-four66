@@ -1,3 +1,8 @@
+"use strict";
+
+/* eslint-env node */
+/* eslint quotes: ["error", "double"] */
+
 module.exports = {
     "parserOptions": {
         "ecmaVersion": 2015
@@ -120,6 +125,7 @@ module.exports = {
         "no-proto": "error",
         "no-redeclare": "error",
         "no-return-assign": ["error", "except-parens"],
+        "no-return-await": "error",
         "no-script-url": "error",
         "no-self-assign": "error",
         "no-self-compare": "error",
@@ -146,7 +152,7 @@ module.exports = {
         "no-catch-shadow": "error",
         "no-delete-var": "error",
         "no-label-var": "error",
-        "no-restricted-globals": ["error"],
+        "no-restricted-globals": "error",
         "no-shadow": "error",
         "no-shadow-restricted-names": "error",
         "no-undef": "error",
@@ -167,7 +173,7 @@ module.exports = {
         }],
         "no-new-require": "error",
         "no-path-concat": "error",
-        'no-process-env': "error",
+        "no-process-env": "error",
         "no-process-exit": "error",
         "no-restricted-modules": "off",
         "no-restricted-properties": "off",
@@ -193,7 +199,7 @@ module.exports = {
         "func-names": "off",
         "func-name-matching": "off",
         "func-style": ["error", "declaration"],
-        "id-blacklist": ["error"],
+        "id-blacklist": "error",
         "id-length": "off",
         "id-match": "off",
         "indent": ["error", 4, {
@@ -267,7 +273,7 @@ module.exports = {
         "no-underscore-dangle": "off",
         "no-unneeded-ternary": "error",
         "no-whitespace-before-property": "error",
-        "object-curly-newline": ["off"],
+        "object-curly-newline": "off",
         "object-curly-spacing": ["error", "always"],
         "object-property-newline": ["error", {
             "allowMultiplePropertiesPerLine": true
@@ -279,7 +285,7 @@ module.exports = {
         "padded-blocks": ["error", "never"],
         "quote-props": "off",
         "quotes": ["error", "single"],
-        "require-jsdoc": ["off"],
+        "require-jsdoc": "off",
         "semi": "error",
         "semi-spacing": ["error", {
             "before": false,
@@ -324,7 +330,7 @@ module.exports = {
         "no-dupe-class-members": "error",
         "no-duplicate-imports": "error",
         "no-new-symbol": "error",
-        "no-restricted-imports": ["error"],
+        "no-restricted-imports": "error",
         "no-tabs": "error",
         "no-this-before-super": "error",
         "no-useless-computed-key": "error",
