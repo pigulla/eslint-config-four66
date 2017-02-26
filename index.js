@@ -142,6 +142,8 @@ module.exports = {
         "no-warning-comments": "off",
         "no-with": "error",
         "radix": "error",
+        "prefer-promise-reject-errors": "error",
+        "require-await": "error",
         "vars-on-top": "off",
         "wrap-iife": ["error", "inside", { "functionPrototypeMethods": true }],
         "yoda": ["error", "never"],
@@ -187,6 +189,7 @@ module.exports = {
         "camelcase": ["error", {
             "properties": "never"
         }],
+        "capitalized-comments": ["error", "always"],
         "comma-spacing": ["error", {
             "before": false,
             "after": true
@@ -262,6 +265,7 @@ module.exports = {
         "no-lonely-if": "error",
         "no-mixed-operators": "error",
         "no-mixed-spaces-and-tabs": "error",
+        "no-multi-assign": "error",
         "no-multiple-empty-lines": "error",
         "no-negated-condition": "off",
         "no-nested-ternary": "error",
@@ -310,6 +314,7 @@ module.exports = {
                 "balanced": true
             }
         }],
+        "template-tag-spacing": ["error", "never"],
         "unicode-bom": ["error", "never"],
         "wrap-regex": "off",
 
@@ -340,6 +345,7 @@ module.exports = {
         "object-shorthand": "error",
         "prefer-arrow-callback": "off",
         "prefer-const": "error",
+        "prefer-destructuring": ["off"],
         "prefer-numeric-literals": "error",
         "prefer-reflect": "off",
         "prefer-rest-params": "off",
