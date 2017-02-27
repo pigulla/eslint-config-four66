@@ -189,7 +189,7 @@ module.exports = {
         "camelcase": ["error", {
             "properties": "never"
         }],
-        "capitalized-comments": ["error", "always"],
+        "capitalized-comments": "off",
         "comma-spacing": ["error", {
             "before": false,
             "after": true
