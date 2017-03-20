@@ -5,7 +5,7 @@
 
 module.exports = {
     "parserOptions": {
-        "ecmaVersion": 2015
+        "ecmaVersion": 7
     },
     "env": {
         "browser": false,
@@ -36,7 +36,9 @@ module.exports = {
     },
 
     "rules": {
-        "comma-dangle": ["error", "never"],
+        // Possible Errors (http://eslint.org/docs/rules/#possible-errors)
+        "no-await-in-loop": "error",
+        "no-compare-neg-zero": "error",
         "no-cond-assign": ["error", "except-parens"],
         "no-console": "error",
         "no-constant-condition": "error",
@@ -68,6 +70,7 @@ module.exports = {
         "valid-jsdoc": "off",
         "valid-typeof": "error",
 
+        // Best Practices (http://eslint.org/docs/rules/#best-practices)
         "accessor-pairs": ["error", {
             "getWithoutSet": false,
             "setWithoutGet": true
@@ -88,6 +91,7 @@ module.exports = {
         "no-case-declarations": "error",
         "no-div-regex": "off",
         "no-else-return": "off",
+        "no-empty-function": "error",
         "no-empty-pattern": "error",
         "no-eq-null": "error",
         "no-eval": "error",
@@ -124,6 +128,7 @@ module.exports = {
         }],
         "no-proto": "error",
         "no-redeclare": "error",
+        "no-restricted-properties": "off",
         "no-return-assign": ["error", "except-parens"],
         "no-return-await": "error",
         "no-script-url": "error",
@@ -148,8 +153,10 @@ module.exports = {
         "wrap-iife": ["error", "inside", { "functionPrototypeMethods": true }],
         "yoda": ["error", "never"],
 
+        // Strict Mode (http://eslint.org/docs/rules/#strict-mode)
         "strict": ["error", "global"],
 
+        // Variables (http://eslint.org/docs/rules/#variables)
         "init-declarations": "off",
         "no-catch-shadow": "error",
         "no-delete-var": "error",
@@ -166,6 +173,7 @@ module.exports = {
         }],
         "no-use-before-define": ["error", "nofunc"],
 
+        // Node.js and CommonJS (http://eslint.org/docs/rules/#nodejs-and-commonjs)
         "callback-return": "error",
         "global-require": "error",
         "handle-callback-err": "error",
@@ -178,9 +186,9 @@ module.exports = {
         "no-process-env": "error",
         "no-process-exit": "error",
         "no-restricted-modules": "off",
-        "no-restricted-properties": "off",
         "no-sync": "off",
 
+        // Stylistic Issues (http://eslint.org/docs/rules/#stylistic-issues)
         "array-bracket-spacing": ["error", "never"],
         "block-spacing": ["error", "always"],
         "brace-style": ["error", "1tbs", {
@@ -190,6 +198,7 @@ module.exports = {
             "properties": "never"
         }],
         "capitalized-comments": "off",
+        "comma-dangle": ["error", "never"],
         "comma-spacing": ["error", {
             "before": false,
             "after": true
@@ -247,6 +256,7 @@ module.exports = {
         "max-statements-per-line": ["error", {
             "max": 1
         }],
+        "multiline-ternary": "off",
         "new-cap": ["error", {
             "newIsCap": true,
             "capIsNew": true,
@@ -256,7 +266,7 @@ module.exports = {
         "newline-after-var": ["error", "always"],
         "newline-before-return": "off",
         "newline-per-chained-call": ["error", {
-            "ignoreChainWithDepth": 2
+            "ignoreChainWithDepth": 3
         }],
         "no-array-constructor": "error",
         "no-bitwise": "error",
@@ -272,11 +282,13 @@ module.exports = {
         "no-new-object": "error",
         "no-plusplus": "off",
         "no-restricted-syntax": ["error", "WithStatement"],
+        "no-tabs": "error",
         "no-ternary": "off",
         "no-trailing-spaces": "error",
         "no-underscore-dangle": "off",
         "no-unneeded-ternary": "error",
         "no-whitespace-before-property": "error",
+        "nonblock-statement-body-position": "off",
         "object-curly-newline": "off",
         "object-curly-spacing": ["error", "always"],
         "object-property-newline": ["error", {
@@ -318,6 +330,7 @@ module.exports = {
         "unicode-bom": ["error", "never"],
         "wrap-regex": "off",
 
+        // ECMAScript 6 (http://eslint.org/docs/rules/#ecmascript-6)
         "arrow-body-style": ["error", "as-needed"],
         "arrow-parens": ["error", "as-needed"],
         "arrow-spacing": ["error", {
@@ -336,7 +349,6 @@ module.exports = {
         "no-duplicate-imports": "error",
         "no-new-symbol": "error",
         "no-restricted-imports": "error",
-        "no-tabs": "error",
         "no-this-before-super": "error",
         "no-useless-computed-key": "error",
         "no-useless-constructor": "error",
@@ -347,7 +359,6 @@ module.exports = {
         "prefer-const": "error",
         "prefer-destructuring": ["off"],
         "prefer-numeric-literals": "error",
-        "prefer-reflect": "off",
         "prefer-rest-params": "off",
         "prefer-spread": "error",
         "prefer-template": "error",
