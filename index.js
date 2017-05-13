@@ -194,9 +194,7 @@ module.exports = {
         "brace-style": ["error", "1tbs", {
             "allowSingleLine": true
         }],
-        "camelcase": ["error", {
-            "properties": "never"
-        }],
+        "camelcase": "off",
         "capitalized-comments": "off",
         "comma-dangle": ["error", "never"],
         "comma-spacing": ["error", {
@@ -265,9 +263,7 @@ module.exports = {
         "new-parens": "error",
         "newline-after-var": ["error", "always"],
         "newline-before-return": "off",
-        "newline-per-chained-call": ["error", {
-            "ignoreChainWithDepth": 3
-        }],
+        "newline-per-chained-call": "off",
         "no-array-constructor": "error",
         "no-bitwise": "error",
         "no-continue": "off",
@@ -300,7 +296,9 @@ module.exports = {
         "operator-linebreak": ["error", "after"],
         "padded-blocks": ["error", "never"],
         "quote-props": "off",
-        "quotes": ["error", "single"],
+        "quotes": ["error", "single", {
+            "avoidEscape": true
+        }],
         "require-jsdoc": "off",
         "semi": "error",
         "semi-spacing": ["error", {
