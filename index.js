@@ -235,11 +235,11 @@ module.exports = {
             "tabWidth": 4,
             "comments": 120,
             "ignoreComments": false,
-            "ignoreTrailingComments": true,
-            "ignoreUrls": false,
+            "ignoreRegExpLiterals": true,
             "ignoreStrings": false,
             "ignoreTemplateLiterals": false,
-            "ignoreRegExpLiterals": false
+            "ignoreTrailingComments": true,
+            "ignoreUrls": false
         }],
         "max-lines": ["error", {
             "max": 500,
@@ -269,7 +269,7 @@ module.exports = {
         "no-continue": "off",
         "no-inline-comments": "off",
         "no-lonely-if": "error",
-        "no-mixed-operators": "error",
+        "no-mixed-operators": "off",
         "no-mixed-spaces-and-tabs": "error",
         "no-multi-assign": "error",
         "no-multiple-empty-lines": "error",
