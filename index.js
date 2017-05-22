@@ -261,7 +261,7 @@ module.exports = {
             "properties": true
         }],
         "new-parens": "error",
-        "newline-after-var": ["error", "always"],
+        "newline-after-var": "off",
         "newline-before-return": "off",
         "newline-per-chained-call": "off",
         "no-array-constructor": "error",
