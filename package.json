@@ -1,8 +1,8 @@
 {
   "name": "eslint-config-four66",
-  "version": "3.19.2",
+  "version": "4.0.0",
   "peerDependencies": {
-    "eslint": ">=3.19.0"
+    "eslint": ">=4.0.0"
   },
   "description": "My personal ESLint config",
   "main": "index.js",
@@ -22,5 +22,6 @@
   "bugs": {
     "url": "https://github.com/pigulla/eslint-config-four66/issues"
   },
-  "homepage": "https://github.com/pigulla/eslint-config-four66#readme"
+  "homepage": "https://github.com/pigulla/eslint-config-four66#readme",
+  "dependencies": {}
 }
