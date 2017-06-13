@@ -215,12 +215,7 @@ module.exports = {
             }
         ],
         'array-bracket-spacing': ['error', 'never'],
-        'array-element-newline': [
-            'error',
-            {
-                'multiline': true
-            }
-        ],
+        'array-element-newline': 'off',
         'block-spacing': ['error', 'always'],
         'brace-style': [
             'error',
