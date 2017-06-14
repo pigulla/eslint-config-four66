@@ -380,7 +380,7 @@ module.exports = {
             {
                 'anonymous': 'always',
                 'named': 'never',
-                'asyncArrow': 'never'
+                'asyncArrow': 'always'
             }
         ],
         'space-in-parens': ['error', 'never'],

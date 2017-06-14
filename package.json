@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-four66",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "peerDependencies": {
     "eslint": ">=4.0.0"
   },
