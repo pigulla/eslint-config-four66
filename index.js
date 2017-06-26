@@ -1,6 +1,7 @@
 'use strict';
 
 /* eslint-env node */
+/* eslint-disable array-bracket-newline */
 
 module.exports = {
     parserOptions: {
@@ -162,7 +163,9 @@ module.exports = {
         'prefer-promise-reject-errors': 'error',
         'require-await': 'error',
         'vars-on-top': 'off',
-        'wrap-iife': ['error', 'inside', { 'functionPrototypeMethods': true }],
+        'wrap-iife': ['error', 'inside', {
+            'functionPrototypeMethods': true
+        }],
         'yoda': ['error', 'never'],
 
         // Strict Mode (http://eslint.org/docs/rules/#strict-mode)
@@ -336,7 +339,10 @@ module.exports = {
         'no-restricted-syntax': ['error', 'WithStatement'],
         'no-tabs': 'error',
         'no-ternary': 'off',
-        'no-trailing-spaces': 'error',
+        'no-trailing-spaces': ['error', {
+            'skipBlankLines': false,
+            'ignoreComments': true
+        }],
         'no-underscore-dangle': 'off',
         'no-unneeded-ternary': 'error',
         'no-whitespace-before-property': 'error',
@@ -354,7 +360,13 @@ module.exports = {
         'operator-assignment': ['error', 'always'],
         'operator-linebreak': ['error', 'after'],
         'padded-blocks': ['error', 'never'],
-        'padding-line-between-statements': ['error', { 'blankLine': 'always', 'prev': 'directive', 'next': '*' }],
+        'padding-line-between-statements': ['error',
+            {
+                'blankLine': 'always',
+                'prev': 'directive',
+                'next': '*'
+            }
+        ],
         'quote-props': 'off',
         'quotes': [
             'error',
@@ -431,7 +443,9 @@ module.exports = {
             }
         ],
         'no-class-assign': 'error',
-        'no-confusing-arrow': ['error', { 'allowParens': true }],
+        'no-confusing-arrow': ['error', {
+            'allowParens': true
+        }],
         'no-const-assign': 'error',
         'no-dupe-class-members': 'error',
         'no-duplicate-imports': 'error',
