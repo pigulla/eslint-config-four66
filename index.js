@@ -356,7 +356,7 @@ module.exports = {
             }
         ],
         'one-var': 'off',
-        'one-var-declaration-per-line': ['error', 'always'],
+        'one-var-declaration-per-line': ['error', 'initializations'],
         'operator-assignment': ['error', 'always'],
         'operator-linebreak': ['error', 'after'],
         'padded-blocks': ['error', 'never'],
