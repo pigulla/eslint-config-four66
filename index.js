@@ -245,6 +245,7 @@ module.exports = {
         'func-call-spacing': [2, 'never'],
         'func-names': 'off',
         'func-name-matching': 'off',
+        'function-paren-newline': ['error', 'multiline'],
         'func-style': ['error', 'declaration'],
         'id-blacklist': 'error',
         'id-length': 'off',
