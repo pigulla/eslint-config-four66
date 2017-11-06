@@ -276,6 +276,7 @@ module.exports = {
         'line-comment-position': 'off',
         'linebreak-style': ['error', 'unix'],
         'lines-around-comment': 'off',
+        'lines-between-class-members': ['error', 'always'],
         'max-depth': ['error', 5],
         'max-len': [
             'error',
@@ -314,6 +315,7 @@ module.exports = {
                 'max': 1
             }
         ],
+        'multiline-comment-style': ['error', 'starred-block'],
         'multiline-ternary': 'off',
         'new-cap': [
             'error',
