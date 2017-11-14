@@ -315,7 +315,7 @@ module.exports = {
                 'max': 1
             }
         ],
-        'multiline-comment-style': ['error', 'starred-block'],
+        'multiline-comment-style': 'off',
         'multiline-ternary': 'off',
         'new-cap': [
             'error',
