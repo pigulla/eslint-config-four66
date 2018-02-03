@@ -277,7 +277,13 @@ module.exports = {
         'line-comment-position': 'off',
         'linebreak-style': ['error', 'unix'],
         'lines-around-comment': 'off',
-        'lines-between-class-members': ['error', 'always'],
+        'lines-between-class-members': [
+            'error',
+            'always',
+            {
+                exceptAfterSingleLine: true
+            }
+        ],
         'max-depth': ['error', 5],
         'max-len': [
             'error',
@@ -357,7 +363,7 @@ module.exports = {
         'object-property-newline': [
             'error',
             {
-                'allowMultiplePropertiesPerLine': true
+                'allowAllPropertiesOnSameLine': true
             }
         ],
         'one-var': 'off',
