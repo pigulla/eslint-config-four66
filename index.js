@@ -369,7 +369,7 @@ module.exports = {
         'one-var': 'off',
         'one-var-declaration-per-line': ['error', 'initializations'],
         'operator-assignment': ['error', 'always'],
-        'operator-linebreak': ['error', 'after'],
+        'operator-linebreak': ['error', 'before'],
         'padded-blocks': ['error', 'never'],
         'padding-line-between-statements': ['error',
             {

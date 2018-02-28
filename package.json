@@ -1,8 +1,8 @@
 {
   "name": "eslint-config-four66",
-  "version": "4.17.0",
+  "version": "4.18.0",
   "peerDependencies": {
-    "eslint": ">=4.17.0"
+    "eslint": ">=4.18.0"
   },
   "description": "My personal ESLint config",
   "main": "index.js",
