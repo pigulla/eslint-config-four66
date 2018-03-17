@@ -186,7 +186,7 @@ module.exports = {
         'no-unused-vars': [
             'error',
             {
-                'vars': 'local',
+                'ignoreRestSiblings': true,
                 'args': 'none'
             }
         ],
@@ -344,7 +344,7 @@ module.exports = {
         'no-multi-assign': 'error',
         'no-multiple-empty-lines': 'error',
         'no-negated-condition': 'off',
-        'no-nested-ternary': 'error',
+        'no-nested-ternary': 'off',
         'no-new-object': 'error',
         'no-plusplus': 'off',
         'no-restricted-syntax': ['error', 'WithStatement'],
